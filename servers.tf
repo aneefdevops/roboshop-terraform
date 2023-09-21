@@ -95,4 +95,6 @@ resource "aws_instance" "dispatch" {
     Name = "dispatch"
   }
 }
-
+output "dispatch" {
+  value = aws_instance.dispatch.public_ip
+}
