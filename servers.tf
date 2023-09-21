@@ -14,8 +14,8 @@ resource "aws_instance" "frontend" {
 }
 resource "aws_route53_record" "frontend" {
   zone_id = "Z00825953L4VHV9YB9DN9"
-  name    = ""
-  type    = "frontend-dev.aneefdevops.online"
+  name    = "frontend-dev.aneefdevops.online"
+  type    = "A"
   ttl     = 30
   records = [aws_instance.frontend.private_ip]
 }
@@ -30,8 +30,8 @@ resource "aws_instance" "mangodb" {
 }
 resource "aws_route53_record" "mangodb" {
   zone_id = "Z00825953L4VHV9YB9DN9"
-  name    = ""
-  type    = "mangodb-dev.aneefdevops.online"
+  name    = "mangodb-dev.aneefdevops.online"
+  type    = "A"
   ttl     = 30
   records = [aws_instance.mangodb.private_ip]
 }
@@ -45,8 +45,8 @@ resource "aws_instance" "catalogue" {
 }
 resource "aws_route53_record" "catalouge" {
   zone_id = "Z00825953L4VHV9YB9DN9"
-  name    = ""
-  type    = "catalouge-dev.aneefdevops.online"
+  name    = "catalouge-dev.aneefdevops.online"
+  type    = "A"
   ttl     = 30
   records = [aws_instance.catalogue.private_ip]
 }
@@ -60,8 +60,8 @@ resource "aws_instance" "redis" {
 }
 resource "aws_route53_record" "redis" {
   zone_id = "Z00825953L4VHV9YB9DN9"
-  name    = ""
-  type    = "redis-dev.aneefdevops.online"
+  name    = "redis-dev.aneefdevops.online"
+  type    = "A"
   ttl     = 30
   records = [aws_instance.redis.private_ip]
 }
@@ -75,8 +75,8 @@ resource "aws_instance" "user" {
 }
 resource "aws_route53_record" "user" {
   zone_id = "Z00825953L4VHV9YB9DN9"
-  name    = ""
-  type    = "user-dev.aneefdevops.online"
+  name    = "user-dev.aneefdevops.online"
+  type    = "A"
   ttl     = 30
   records = [aws_instance.user.private_ip]
 }
@@ -90,8 +90,8 @@ resource "aws_instance" "cart" {
 }
 resource "aws_route53_record" "cart" {
   zone_id = "Z00825953L4VHV9YB9DN9"
-  name    = ""
-  type    = "cart-dev.aneefdevops.online"
+  name    = "cart-dev.aneefdevops.online"
+  type    = "A"
   ttl     = 30
   records = [aws_instance.cart.private_ip]
 }
@@ -105,8 +105,8 @@ resource "aws_instance" "mysql" {
 }
 resource "aws_route53_record" "mysql" {
   zone_id = "Z00825953L4VHV9YB9DN9"
-  name    = ""
-  type    = "mysql-dev.aneefdevops.online"
+  name    = "mysql-dev.aneefdevops.online"
+  type    = "A"
   ttl     = 30
   records = [aws_instance.mysql.private_ip]
 }
@@ -120,8 +120,8 @@ resource "aws_instance" "shipping" {
 }
 resource "aws_route53_record" "shipping" {
   zone_id = "Z00825953L4VHV9YB9DN9"
-  name    = ""
-  type    = "shipping-dev.aneefdevops.online"
+  name    = "shipping-dev.aneefdevops.online"
+  type    = "A"
   ttl     = 30
   records = [aws_instance.shipping.private_ip]
 }
@@ -135,8 +135,8 @@ resource "aws_instance" "rabbitmq" {
 }
 resource "aws_route53_record" "rabbitmq" {
   zone_id = "Z00825953L4VHV9YB9DN9"
-  name    = ""
-  type    = "rabbitmq-dev.aneefdevops.online"
+  name    = "rabbitmq-dev.aneefdevops.online"
+  type    = "A"
   ttl     = 30
   records = [aws_instance.rabbitmq.private_ip]
 }
@@ -150,8 +150,8 @@ resource "aws_instance" "payment" {
 }
 resource "aws_route53_record" "payment" {
   zone_id = "Z00825953L4VHV9YB9DN9"
-  name    = ""
-  type    = "payment-dev.aneefdevops.online"
+  name    = "payment-dev.aneefdevops.online"
+  type    = "A"
   ttl     = 30
   records = [aws_instance.payment.private_ip]
 }
@@ -166,8 +166,8 @@ resource "aws_instance" "dispatch" {
 
 resource "aws_route53_record" "dispatch" {
   zone_id = "Z00825953L4VHV9YB9DN9"
-  name    = ""
-  type    = "dispatch-dev.aneefdevops.online"
+  name    = "dispatch-dev.aneefdevops.online"
+  type    = "A"
   ttl     = 30
   records = [aws_instance.dispatch.private_ip]
 }
