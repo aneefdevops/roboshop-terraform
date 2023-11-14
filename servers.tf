@@ -5,7 +5,7 @@ data "aws_ami" "centos" {
 }
 #data "aws_security_group" "allow.all" {
   #name = "allow.all"
-}
+#}
 
 resource "aws_instance" "frontend" {
   ami           = data.aws_ami.centos.image_id
