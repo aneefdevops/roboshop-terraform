@@ -4,7 +4,7 @@ data "aws_ami" "centos" {
   name_regex       = "Centos-8-DevOps-Practice"
 }
 data "aws_security_group" "allow.all" {
-  name = "allow-all"
+  name = "allow.all"
 }
 
 resource "aws_instance" "frontend" {
