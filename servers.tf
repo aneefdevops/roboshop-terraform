@@ -17,7 +17,7 @@ resource "aws_instance" "frontend" {
 }
 resource "aws_route53_record" "frontend" {
   zone_id = "Z04520141JRLZY4JX3O8T"
-  name    = "frontend-naveendevops1.online"
+  name    = "frontend-dev.naveendevops1.online"
   type    = "A"
   ttl     = 30
   records = [aws_instance.frontend.private_ip]
@@ -33,7 +33,7 @@ resource "aws_instance" "mangodb" {
 }
 resource "aws_route53_record" "mangodb" {
   zone_id = "Z04520141JRLZY4JX3O8T"
-  name    = "mangodb-naveendevops1.online"
+  name    = "mangodb-dev.naveendevops1.online"
   type    = "A"
   ttl     = 30
   records = [aws_instance.mangodb.private_ip]
@@ -48,7 +48,7 @@ resource "aws_instance" "catalogue" {
 }
 resource "aws_route53_record" "catalouge" {
   zone_id = "Z04520141JRLZY4JX3O8T"
-  name    = "catalouge-naveendevops1.online"
+  name    = "catalouge-dev.naveendevops1.online"
   type    = "A"
   ttl     = 30
   records = [aws_instance.catalogue.private_ip]
@@ -63,7 +63,7 @@ resource "aws_instance" "redis" {
 }
 resource "aws_route53_record" "redis" {
   zone_id = "Z04520141JRLZY4JX3O8T"
-  name    = "redis-naveendevops1.online"
+  name    = "redis-dev.naveendevops1.online"
   type    = "A"
   ttl     = 30
   records = [aws_instance.redis.private_ip]
@@ -78,7 +78,7 @@ resource "aws_instance" "user" {
 }
 resource "aws_route53_record" "user" {
   zone_id = "Z04520141JRLZY4JX3O8T"
-  name    = "user-naveendevops1.online"
+  name    = "user-dev.naveendevops1.online"
   type    = "A"
   ttl     = 30
   records = [aws_instance.user.private_ip]
@@ -93,7 +93,7 @@ resource "aws_instance" "cart" {
 }
 resource "aws_route53_record" "cart" {
   zone_id = "Z04520141JRLZY4JX3O8T"
-  name    = "cart-naveendevops1.online"
+  name    = "cart-dev.naveendevops1.online"
   type    = "A"
   ttl     = 30
   records = [aws_instance.cart.private_ip]
@@ -108,7 +108,7 @@ resource "aws_instance" "mysql" {
 }
 resource "aws_route53_record" "mysql" {
   zone_id = "Z04520141JRLZY4JX3O8T"
-  name    = "mysql-naveendevops1.online"
+  name    = "mysql-dev.naveendevops1.online"
   type    = "A"
   ttl     = 30
   records = [aws_instance.mysql.private_ip]
@@ -123,7 +123,7 @@ resource "aws_instance" "shipping" {
 }
 resource "aws_route53_record" "shipping" {
   zone_id = "Z04520141JRLZY4JX3O8T"
-  name    = "shipping-naveendevops1.online"
+  name    = "shipping-dev.naveendevops1.online"
   type    = "A"
   ttl     = 30
   records = [aws_instance.shipping.private_ip]
@@ -138,7 +138,7 @@ resource "aws_instance" "rabbitmq" {
 }
 resource "aws_route53_record" "rabbitmq" {
   zone_id = "Z04520141JRLZY4JX3O8T"
-  name    = "rabbitmq-naveendevops1.online"
+  name    = "rabbitmq-dev.naveendevops1.online"
   type    = "A"
   ttl     = 30
   records = [aws_instance.rabbitmq.private_ip]
@@ -153,7 +153,7 @@ resource "aws_instance" "payment" {
 }
 resource "aws_route53_record" "payment" {
   zone_id = "Z04520141JRLZY4JX3O8T"
-  name    = "payment-naveendevops1.online"
+  name    = "payment-dev.naveendevops1.online"
   type    = "A"
   ttl     = 30
   records = [aws_instance.payment.private_ip]
@@ -169,7 +169,7 @@ resource "aws_instance" "dispatch" {
 
 resource "aws_route53_record" "dispatch" {
   zone_id = "Z04520141JRLZY4JX3O8T"
-  name    = "dispatch-naveendevops1.online"
+  name    = "dispatch-dev.naveendevops1.online"
   type    = "A"
   ttl     = 30
   records = [aws_instance.dispatch.private_ip]
